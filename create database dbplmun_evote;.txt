@@ -1,0 +1,59 @@
+create database dbplmun_evote;
+
+use dbplmun_evote;
+
+create table tblacct(
+AcctId int primary key auto_increment,
+AdminId int,
+Email varchar(50),
+Password varchar(50)
+);
+
+INSERT INTO tbladmin StudId SELECT studid FROM tblstudent UNION SELECT studid FROM tbladmin;
+
+
+alter table tblacct auto_increment = 1101;
+
+create table tbladmin(
+AdminID int primary key auto_increment,
+StudID int,
+CandidateID int,
+Lname varchar(50),
+Fname varchar(50),
+MI char,
+Birthday date,
+Gender varchar(10),
+Position varchar (20),
+Department varchar (50),
+email varchar(50),
+password varchar(100)
+);
+
+alter table tbladmin auto_increment = 101;
+
+create table tblstudent(
+StudId int primary key auto_increment,
+Lname varchar(50),
+Fname varchar(50),
+MI char,
+Course varchar(50),
+Yr varchar(10),
+Birthday date,
+Gender varchar(10)
+);
+
+alter table tblstudent auto_increment = 10101;
+
+create table tblcandidate(
+CandidateID int primary key auto_increment,
+Lname varchar(50),
+Fname varchar(50),
+MI char,
+Position varchar(50),
+Course varchar(50),
+Yr int,
+Birthday date,
+Gender varchar(10)
+);
+
+alter table tblcandidate auto_increment = 100001;

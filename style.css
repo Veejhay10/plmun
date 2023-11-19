@@ -1,0 +1,38 @@
+
+body{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: auto;
+    background-color: black;
+    background-image: url(Bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 600px;
+    border: 3px solid green;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 30px rgba(99, 96, 96, 0.815);
+    border-radius: 15px;
+
+}
+label{
+    margin-top: 50px;
+}
+input{
+    padding-right: 100px;
+
+}
+a{
+ text-decoration: none;
+}
+button{
+    margin-top: 10px;
+}
